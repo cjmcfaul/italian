@@ -1,0 +1,126 @@
+a {
+  text-decoration: none;
+}
+
+tr, ul{
+  color: #f93131; /* Red */
+  font-family: monospace;
+  margin: auto;
+  text-align: left;
+  font-size: 20px;
+  font-family: monospace;
+  list-style-type: none;
+}
+
+h1,h2,h3,h4{
+  color: black;
+
+}
+
+
+nav ul {
+    font-family: monospace;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e56262;
+    width: 100%;
+}
+
+nav li {
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+title{
+  font-family: monospace;
+  text-align: center;
+  color: white;
+}
+
+
+body {
+  background-color: white;
+  background: url(media/design/rgbground.png);
+  color: white;
+  font-family: monospace;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div.post_content {
+  align-content: center;
+  background-color: white;
+  color: #f93131; /* Red */
+  font-family: monospace;
+  border-style: groove;
+  padding-left: 30;
+  padding-right: 30;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+div.btn_container {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+div.rating_content {
+  align: center;
+  background-color: white;
+  font-family: monospace;
+  border-style: groove;
+  border-radius: 3px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: black;
+}
+
+div.post_text {
+  text-align: left;
+  margin: 10 10 10 10;
+}
+
+div.rating_button {
+  margin: auto;
+  align: center;
+}
+
+
+.button {
+    background-color: #e56262; /* Red */
+    border-style: groove;
+    color: white;
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+}
+
+div.post_content h1{
+  text-decoration: underline;
+  font-size: 30px;
+}
+div.header_image {
+  /*width: 80%, auto;*/
+}

@@ -1,0 +1,33 @@
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/blog/style.css' %}" />
+<html>
+    <head>
+        <title>{% block head_title %}That Sandwich Guy{% endblock %}</title>
+        <div class ='header_image', align = "center">
+          {% load static %}
+          <img src = "{% static "/blog/media/design/TSG-Logo.png"%}" /></div>
+    {% block navbar %}
+        <nav>
+            <ul>
+              <li style = "float:right"><a href="{% url 'contact' %}">Contact</a></li>
+              <li style = "float:right"><a href="{% url 'about' %}">About</a></li>
+              <li style = "float:right"><a href="{% url 'index' %}">Home</a></li>
+            </ul>
+        </nav>
+
+    {% endblock %}
+    </head>
+
+
+    <body>
+        <h1>{% block title %}That Sandwhich Guy{% endblock %}</h1>
+        {% block content %}
+
+        {% endblock %}
+        {% block image %}
+        {% endblock %}
+        {% block content_two %}
+        {% endblock %}
+    </body>
+</html>

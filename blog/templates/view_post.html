@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head_title %}{% endblock %}
+{% block title %}{% endblock %}
+
+
+
+{% block content %}
+    <div class = "post_content">
+      <h1> {{post.title}}</h1>
+      <h4> {{post.pub_date}}</h4>
+{% endblock %}
+{% load static %}
+      <div><img src = "{% static "post.image_one.url" %}" /></div>
+{% block content_two %}
+      <div class = "post_text">{{ post.content }}</div>
+    </div>
+
+    <div class = "rating_content">
+      <h1> {{rating.sandwich_name}} </h1>
+      <p></p>
+      <h2><u>Rating</u></h2>
+      <table align = "center">
+        <tr>
+          <td>Bread Quality: </td>
+          <td>{{ rating.bread_quality }}/10</td>
+        </tr>
+        <tr>
+          <td>Meat Quality: </td>
+          <td>{{rating.meat_quality}}/10</td>
+        </tr>
+        <tr>
+          <td>Meat Quantity: </td>
+          <td>{{rating.meat_quantity}}/10</td>
+        </tr>
+        <tr>
+          <td>Toppings Quality: </td>
+          <td>{{rating.veg_quality}}/10</td>
+        </tr>
+        <tr>
+          <td>Toppings Quantity: </td>
+          <td>{{rating.veg_quantity}}/10</td>
+        </tr>
+        <tr>
+          <td>Dressing Quality: </td>
+          <td>{{rating.dressing_quality}}/10</td>
+        </tr>
+        <tr>
+          <td>Dressing Quantity: </td>
+          <td>{{rating.dressing_quantity}}/10</td>
+        </tr>
+      </table>
+    </div>
+{% endblock %}
